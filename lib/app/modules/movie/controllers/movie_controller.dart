@@ -15,7 +15,6 @@ class MovieController extends GetxController {
   var movieList = <Movies>[].obs;
   var movieTypeList = <String>[].obs;
   var movieListTemp = <Movies>[].obs;
-  var page = 1.obs;
 
   var isLoadingData = false.obs;
 
@@ -37,7 +36,7 @@ class MovieController extends GetxController {
     super.onClose();
   }
 
-  ///getting issue list here
+  ///getting movie list here
   void getMovieList() async {
     isLoadingData.value = true;
 
